@@ -1,0 +1,545 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    background-color: #000;
+}
+
+/* css hero */
+.hero {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-container {
+    height: 100vh;
+}
+
+@keyframes SlideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.stats {
+    position: absolute;
+    bottom: -50px;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 2rem;
+    color: #ffffff;
+    width: 100%;
+}
+
+.stat-item {
+    text-align: center;
+}
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    display: block;
+}
+
+.nav-hero {
+    right: 80px;
+    top: 35%;
+    position: absolute;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.nav-hero span {
+    background: transparent;
+    border: none;
+    border-right: #000;
+    color: white;
+    opacity: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.nav-hero span.active {
+    font-weight: bold;
+    opacity: 100%;
+    transform: scale(1.5);
+    color: #FFFFFF;
+}
+
+@keyframes FadeOut {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+}
+
+@keyframes FadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes Popup {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.hero-item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: none;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.hero-item.active {
+    display: flex;
+    opacity: 1;
+}
+
+#hero1 .hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../Image/backgroundhero.png') no-repeat center center/cover;
+    animation: Popup 2s ease 0s 1 normal forwards;
+}
+
+#hero1 .hero-text {
+    margin-top: 200px;
+    margin-left: 100px;
+    color: #ffffff;
+    width: 50%;
+    animation: FadeInLeft 2s ease 0s 1 normal forwards;
+    z-index: 1;
+}
+
+#hero1 .hero-text h2 {
+    width: 60%;
+    font-size: 3rem;
+}
+
+#hero1 .hero-text p {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+#hero1 .hero-text span::after {
+    content: "";
+    position: absolute;
+    opacity: 50%;
+    left: 0;
+    bottom: -8px;
+    /* Jarak dari teks ke garis bawah */
+    width: 20%;
+    height: 2px;
+    /* Tebal garis bawah */
+    background-color: #fff;
+    /* Warna garis bawah */
+}
+
+#hero1 .hero-text:hover span::after {
+    opacity: 100%;
+}
+
+#hero2 {
+    background: url('../Image/backgroundhero2.png') no-repeat center center/cover;
+    animation: Popup 2s ease 0s 1 normal forwards;
+}
+
+#hero2 .hero-text {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+    color: #ffffff;
+    width: 100%;
+    animation: FadeInLeft 2s ease 0s 1 normal forwards;
+    z-index: 1;
+}
+
+#hero2 .hero-text h2 {
+    width: 50%;
+    font-size: 3rem;
+    text-align: center;
+}
+
+#hero2 .hero-text p {
+    width: 70%;
+    color: #ffffff;
+    text-align: center;
+}
+
+#hero2 .hero-button {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#hero2 .hero-button button {
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    border: solid #ffffff 4px;
+    text-decoration: no;
+    background: transparent;
+    animation: FadeInLeft 2s ease 0s 1 normal forwards;
+}
+
+#hero3 {
+    background: url('../Image/backgroundhero3.png') no-repeat center center/cover;
+    padding-top: 30px;
+}
+
+.reason {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    padding: 20px 0px;
+}
+
+.reason-left {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-right: 50px;
+}
+
+.reason-left-text {
+    width: 100%;
+}
+
+.reason-left-text p {
+    font-size: 1rem;
+    color: #5C6972;
+    text-align: s;
+}
+
+.reason-left-button button {
+    border: 0;
+    text-align: center;
+    display: inline-block;
+    padding: 14px;
+    width: 150px;
+    margin: 20px 0px;
+    color: #ffffff;
+    background-color: #002842;
+    border-radius: 15% 85% 15% 85% / 100% 0% 100% 0%;
+    font-family: "proxima-nova-soft", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    transition: box-shadow 200ms ease-out;
+}
+
+.reason-left-image {
+    width: 400px;
+    height: 500px;
+    border-radius: 0% 35% 0% 0%;
+}
+
+.reason-left-image img {
+    width: 400px;
+    height: 500px;
+    border-radius: 0% 35% 0% 0%;
+}
+
+.reason-right {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 600px;
+}
+
+.reason-right-text h2 {
+    font-size: 3rem;
+}
+
+.reason-right-item {
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+    max-width: 100%;
+    text-align: center;
+    gap: 20px;
+}
+
+.reason-right-item-number {
+    background: #1C3145;
+    border-radius: 0% 40% 0% 40%;
+    width: 71.5px;
+    height: 70px;
+}
+
+.reason-right-item-number h1 {
+    font-family: Inter;
+    font-size: 4rem;
+    margin-top: -40px;
+    margin-left: 20px;
+}
+
+.reason-right-item-text {
+    width: 100%;
+    color: #1C3145;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.testimoni {
+    background-color: #2370DC;
+    color: #ffffff;
+    padding: 60px 0px;
+    text-align: center;
+    height: 100vh;
+}
+
+.testimoni-header {
+    margin-bottom: 40px;
+}
+
+.testimoni-header h1 {
+    font-size: 2.5rem;
+}
+
+.testimoni-header h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.testimoni-slider {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.testimoni-list {
+    display: flex;
+    transition: 0.8s ease;
+    position: relative;
+    left: 0;
+    gap: 30px;
+}
+
+.testimoni-item {
+    min-width: calc(100% - 30px); /* Menyesuaikan lebar agar mempertimbangkan gap */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px; /* Memberikan jarak antara gambar dan teks */
+}
+
+.testimoni-image img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.testimoni-text-content {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    flex: 1;
+}
+
+.testimoni-text {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 15px 0;
+}
+
+.testimoni-author {
+    font-size: 1.1rem;
+    color: #344B64;
+    font-weight: bold;
+}
+
+.testimoni-job {
+    font-size: 1rem;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.testimoni-buttons {
+    position: relative;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-10%);
+}
+
+.testimoni-buttons button {
+    background-color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color: #fff;
+    transition: background 0.3s;
+}
+
+.testimoni-buttons button:hover {
+    background-color: #ffffff;
+}
+
+.testimoni-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    padding: 0;
+}
+
+.testimoni-dots li {
+    list-style: none;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    margin: 0 5px;
+    border-radius: 50%;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.testimoni-dots li.active {
+    width: 30px;
+    border-radius: 20px;
+    background-color: #FFD700;
+}
+
+/* Services Section */
+.services {
+    padding: 4rem 2rem;
+    background-color: #fff;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.service-card {
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card i {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.btn-more {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 4rem 2rem 1rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section h3 {
+    margin-bottom: 1rem;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+    color: var(--text-light);
+    text-decoration: none;
+}
+
+.social-links {
+    margin-top: 1rem;
+}
+
+.social-links a {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
