@@ -42,7 +42,7 @@ body{
     font-family: inter;
 }
 .container-about1 {
-    background: url('../Image/header.png') no-repeat center center/cover;
+    background: url('../Image/background.png') no-repeat center center/cover;
     background-size:cover; 
     background-position: center; 
     width: 100%; 
