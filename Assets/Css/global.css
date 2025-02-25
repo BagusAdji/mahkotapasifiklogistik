@@ -62,16 +62,58 @@ nav{
     flex-direction: column;
     align-items: end;
 }
-.nav-button button{
-    font-weight: bold;
-    font-size: 1rem;
-    text-decoration: none;
-    color: #ffffff;
+.nav-button{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.btn-delivery{
+    width: 209px;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Jarak antara ikon dan teks */
     background: transparent;
-    display: inline-block;
+    border: 3px solid white;
+    color: white;
+    padding: 10px 15px;
+    font-size: .9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn-message{
+    width: 173px;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Jarak antara ikon dan teks */
+    background: transparent;
+    border: 3px solid white;
+    color: white;
+    padding: 10px 5px;
+    font-size: .9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn-message img{
+    width: 17px; /* Sesuaikan ukuran ikon */
+    height: 17px;
+}
+.btn-delivery img{
+    width: 27px; /* Sesuaikan ukuran ikon */
+    height: 16px;
+}
+.btn-translate{
+    width: 42px;
+    height: 42px;
+    background: transparent;
+    border: none;
+    color: white;
     padding: 10px;
-    position: relative;
-    border: 3px solid #ffffff;
+    font-size: .9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn-translate.active{
+    border: 3px solid white;
 }
 .nav-list{
     margin-top: 20px;
