@@ -250,16 +250,60 @@ nav{
         width: 42px;
         height: 31px;
     }
-    .nav-button button{
+    .btn-delivery{
+        width: 73px;
+        display: flex;
+        align-items: center;
+        gap: 8px; /* Jarak antara ikon dan teks */
+        background: transparent;
+        border: 1px solid white;
+        color: white;
+        padding: 1px;
+        font-size: .3rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    .btn-message{
+        width: 53px;
+        display: flex;
+        align-items: center;
+        gap: 2px; /* Jarak antara ikon dan teks */
+        background: transparent;
+        border: 1px solid white;
+        color: white;
+        padding: 1px;
+        font-size: .3rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    .btn-message img{
+        width: 7px; /* Sesuaikan ukuran ikon */
+        height: 7px;
+    }
+    .btn-delivery img{
+        width: 12px; /* Sesuaikan ukuran ikon */
+        height: 6px;
+    }
+    .btn-translate{
+        width: 12px;
+        height: 12px;
+        background: transparent;
+        border: none;
+        color: white;
         padding: 2px;
-        border: 1px solid #ffffff;
-        font-size: .5rem;
+        font-size: .4rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    .btn-translate.active{
+        border: 1px solid white;
     }
     .nav-list ul{
         gap: 10px;
     }
     .nav-list{
-        margin-top: 10px;
+        height: 20px;
+        margin-top: 5px;
     }
     .nav-list ul li a:hover{
         color: white;

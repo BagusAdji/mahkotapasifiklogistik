@@ -13,7 +13,7 @@ body{
     font-family: inter;
 }
 .contact-title{
-    background-image: url('../image/COTANT2.png'); 
+    background-image: url('../Image/COTANT2.png'); 
     background-size:cover; 
     background-position: center; 
     width: 100%;
@@ -141,7 +141,7 @@ textarea {
     margin: 0;
 }
 .from-contact-right-content{
-    background-image: url(../image/gambar5.png);
+    background-image: url(../Image/gambar5.png);
     background-size:cover; 
     background-position: center;
     margin: 0 210px 50px 40px;

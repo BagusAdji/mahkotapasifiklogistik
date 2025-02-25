@@ -42,7 +42,7 @@ body{
     font-family: inter;
 }
 .container-about1 {
-    background-image: url('../image/header.png'); 
+    background-image: url('../Image/header.png'); 
     background-size:cover; 
     background-position: center; 
     width: 100%; 
@@ -119,7 +119,7 @@ body{
     animation: slideFromRight 1s ease-out forwards;
 }
 .about-footer1 {
-    background-image: url('../image/gambar3.png');
+    background-image: url('../Image/gambar3.png');
     background-size: cover;
     background-position: center;
     display: flex;
