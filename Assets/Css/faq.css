@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Space+Grotesk:wght@300..700&display=swap');
+:root{
+    --base-color: white;
+    --text-color: #344B64;
+    --secondary-text: black;
+    --secondary-color: #00537A;
+    --connect-color: #002842;
+}
+body{
+    background-color: var(--base-color);
+    margin: 0;
+    padding: 0;
+    font-family: inter;
+}
+.faq-start{
+    background-image: url('../image/FAQ.jpg'); 
+    background-size:cover; 
+    background-position: center; 
+    width: 100%;
+    height: 100vh;
+}
+.faq-title{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.faq-title h1{
+    font-size: 5.5rem;
+    margin: 0;
+    opacity: 10%;
+}
+.faq-title p{
+    font-size: 4rem;
+    margin: 0;
+    font-weight: bold;
+    margin-top: -125px;
+    color: #002842;
+}
+.faq-section{
+    padding: 0 20px;
+    padding-top: 0;
+}
+.faq{
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+}
+.faq li{
+    background: #f2f2f2;
+    margin-bottom: 50px;
+}
+.faq li:last-child {
+    border-top: 1px #CCC solid;
+}
+.q {
+    padding: 2em 0;
+    border: 1px solid black;
+    cursor: pointer;
+    font-weight: bold;
+    color: #344B64;
+    display: flex;
+    justify-content: space-between; /* Membuat arrow di kanan */
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    z-index: 2;
+}
+.q {
+    position: relative; 
+    padding-left: 10px; 
+}
+.text-q{
+    margin-left: 30px;
+    font-size: 2rem;
+}
+.arrow-box {
+    background-color: #002842;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%; 
+    margin-right: 30px;
+}
+
+.arrow {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-left: 20px solid #fff;
+    border-bottom: 12px solid transparent;
+    transition: 0.3s;
+}
+.faq p{
+    color: #888;
+    line-height: 25px;
+}
+.a {
+    overflow: hidden;
+    height: 0;
+    max-height: 0;
+    padding: 0 1em 0 3.3em;
+    background-color: #D9D9D9;
+    border: 1px solid black;
+    margin-top: -20px;
+    border-radius: 0 0 20px 20px;
+    position: relative;
+    z-index: 1;
+    word-wrap: break-word; 
+    white-space: normal; 
+    overflow-wrap: break-word; 
+    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+.a-opened {
+    height: auto;
+    max-height: 200px; 
+    padding: 2em 1em 2em 3em;
+}
+.text-a{
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+}
+
+.kotak {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 100%;
+    background-color: white;
+    transition: background-color 0.3s ease;
+    border-radius: 19px 0 0 19px; 
+}
+.kotak-active {
+    background-color: #344B64 !important;
+    border-radius: 19px 0 0 0;
+    height: 110%;
+}
+.q:hover .kotak,
+.q:hover p { 
+    background-color: #344B64;
+    color: white; 
+}
+#kotak1{
+    border-radius: 0 0 0 19px;
+    background-color: #344B64;
+}
+.a p{
+    font-size: 1rem;
+    color: black;
+}
+.arrow-rotated{
+    transform: rotate(90deg);
+}
+
+/*----------------------- RESPONSIVE ---------------------*/
+@media (min-width: 350px) and (max-width: 500px){
+    .faq-start{
+        height: 40vh;
+    }
+    .faq-title {
+        height: 25vh;
+    }
+    .faq-title h1{
+        font-size: 1.8rem;
+    }
+    .faq-title p{
+        font-size: 1.6rem;
+        margin-top: -50px;
+    }
+    .faq-section{
+        padding: 0 20px;
+    }
+    .q{
+        padding: 10px 0;
+    }
+    .text-q{
+        font-size: .8rem;
+    }
+    .text-a{
+        font-size: .7rem;
+        padding-bottom: 10px;
+    }
+    .arrow{
+        border-top: 8px solid transparent;
+        border-left: 16px solid #fff;
+        border-bottom: 8px solid transparent;
+        }
+}
+@media (min-width: 500px) and (max-width: 700px){
+    .faq-start{
+        height: 60vh;
+    }
+    .faq-title {
+        height: 25vh;
+    }
+    .faq-title h1{
+        font-size: 2.5rem;
+    }
+    .faq-title p{
+        font-size: 2rem;
+        margin-top: -60px;
+    }
+    .faq-section{
+        padding: 0 20px;
+    }
+    .q{
+        padding: 15px 0;
+    }
+    .text-q{
+        font-size: .9rem;
+    }
+    .text-a{
+        font-size: .7rem;
+        padding-bottom: 10px;
+    }
+    .arrow{
+    border-top: 8px solid transparent;
+    border-left: 16px solid #fff;
+    border-bottom: 8px solid transparent;
+    }
+}
+@media (min-width: 700px) and (max-width: 1000px){
+    .faq-start{
+        height: 85vh;
+    }
+    .faq-title {
+        height: 25vh;
+    }
+    .faq-title h1{
+        font-size: 3rem;
+    }
+    .faq-title p{
+        font-size: 2.5rem;
+        margin-top: -70px;
+    }
+    .faq-section{
+        padding: 0 20px;
+    }
+    .q{
+        padding: 15px 0;
+    }
+    .text-q{
+        font-size: 1.1rem;
+    }
+    .text-a{
+        font-size: .9rem;
+        padding-bottom: 10px;
+    }
+}
