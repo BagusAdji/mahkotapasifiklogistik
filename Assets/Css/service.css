@@ -78,11 +78,11 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 140px;
+    gap: 100px;
     padding: 159px 119px;
 }
 .service-container-left{
-    margin-right: 86px;
+    margin-right: 166px;
     width: 400px;
     display: flex;
     flex-direction: column;
@@ -222,17 +222,19 @@
 }
 @media (min-width: 300px) and (max-width: 599px){
     .hero-container{
+        justify-content: center;
+        align-items: center;
         padding: 80px 30px;
-        height: 250px;
+        height: 350px;
         gap: 5px;
     }
     .hero-container h1{
-        font-size: .5rem;
+        font-size: 1rem;
         width: 150px;
     }
     .hero-container p{
-        font-size: .313rem;
-        width: 150px;
+        font-size: .613rem;
+        width: 250px;
         height: 180px;
     }
     .service-stats{
@@ -250,11 +252,14 @@
         gap: 5px;
     }
     .service-stats-item{
-        width: 56px;
+        width: 65px;
         height: 16px;
         gap: 5px;
     }
     .service-stats-item-icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 16px;
         height: 16px;
         padding: 0px;
@@ -269,60 +274,63 @@
         height: 24px;
     }
     .service-stats-item-text h3{
-        font-size: .213rem;
+        font-size: .313rem;
     }
     .service-stats-item-text p{
-        font-size: .153rem;
+        font-size: .193rem;
     }
     .service-container{
-        height: 250px;
+        height: 400px;
         width: 100%;
-        justify-content: space-evenly;
-        align-items: start;
-        padding: 19px 20px;
-
+        justify-content:center;
+        align-items: center;
+        padding: 0px 20px;
+        gap: 0;
     }
     .service-container-left{
         margin-right: 0px;
-        width: 130px;
+        width: max-content;
+        display: flex;
         flex-direction: column;
-        margin-left: -50px;
+        margin-left: 0px;
+        justify-content: center;
+        align-items: start;
     }
     .service-container-left-header{
-        width: 100px;
-        height: 23px;
+        width: 250px;
+        height: 43px;
         padding: 5px;
         gap: 10px;
         margin-bottom: 10px;
     }
     .service-container-left-header .icon{
-        padding: 1px 2px;
-        width: 18px;
-        height: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        width: 28px;
+        height: 28px;
     }
     .service-container-left-header .icon img{
-        width: 14px;
-        height: 14px;
+        width: 24px;
+        height: 24px;
         border-radius: 50%;
     }
     .service-container-left-header h1{
-        font-size: .313rem;
+        font-size: 1rem;
     }
     .service-container-left-text{
-        width: 120px;
+        width: 300px;
         gap: 10px;
     }
     .service-container-left-text strong{
         font-weight: 900;
     }
-    .service-container-left-text p{
-        font-size: .313rem;
-    }
     .service-container-left-text ul{
-        gap: 4px;
+        gap: 10px;
     }
     .service-container-left-text ul li h1{
-        font-size: .313rem;
+        font-size: .813rem;
     }
     .service-container-left-text .list-item{
         gap: 10px;
@@ -332,62 +340,19 @@
         height: 10px;
     }
     .service-container-left-text p{
-        font-size: .313rem;
+        font-size: .813rem;
         font-weight: 500;
     }
     .service-container-left button{
-        font-size: .313rem;
+        font-size: .813rem;
         margin-top: 9px;
-        width: 60px;
-        height: 20px;
+        width: 150px;
+        height: 40px;
         padding: 3px 6px;
         border-radius: 25px;
     }
     .service-container-right{
-        margin-top: 20px;
-        height: 400px;
-        margin-left: -150px;
-    }
-    .service-container-right .top-border{
-        border: 6px solid #00537A;
-        width: 97px;
-        height: 99px;
-        background-color: transparent;
-        transform: rotate(45deg);
-        border-radius: 15px;
-        margin-left: -95px;
-    }
-    .service-container-right  .image{
-        margin :5px 5px;
-        width: 92px;
-        height: 94px;
-        border-radius: 20px;
-        overflow: hidden;
-    }
-    .service-container-right  .image img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
-    }
-    .service-container-right .bottom-border{
-        border: 2px solid #002842;
-        width: 92px;
-        height: 94px;
-        border-radius: 15px;
-        margin-top: 22px;
-    }
-    .service-container-right .text-service{
-        width: 39px;
-        height: 39px;
-        border-radius: 10px;
-        margin-top: 90px;
-        margin-left: -70px;
-    }
-    .text-service p{
-        rotate: -45deg;
-        font-size: .313rem;
-        font-weight: bold;
+        display: none;
     }
 }
 @media (min-width: 600px) and (max-width: 1030px){
@@ -446,9 +411,9 @@
         font-size: .353rem;
     }
     .service-container{
-        height: 450px;
+        height: 350px;
         width: 100%;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: start;
         padding: 49px 20px;
     }
@@ -505,8 +470,8 @@
     .service-container-left button{
         font-size: .613rem;
         margin-top: 9px;
-        width: 60px;
-        height: 20px;
+        width: 120px;
+        height: 30px;
         padding: 3px 6px;
         border-radius: 25px;
     }
@@ -558,6 +523,21 @@
     }
 }
 @media (min-width: 1030px) and (max-width: 1353px){
+    .service-stats{
+        margin: -45px auto 0 auto;
+        width: 1000px;
+        height: 120px;
+        border-radius: 15px;
+        padding: 10px 30px;
+    }
+    .service-stats-content{
+        height: 80px;
+        border-radius: 5px;
+        padding: 8px;
+        align-items: center ;
+        justify-content: space-around;
+        gap: 5px;
+    }
     .service-container-left{
         margin-right: 66px;
         width: 380px;

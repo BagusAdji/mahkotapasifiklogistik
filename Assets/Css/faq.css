@@ -125,13 +125,28 @@ body{
 .a-opened {
     height: auto;
     max-height: 200px; 
-    padding: 2em 1em 2em 3em;
+    padding: 2em 0em 2em 3em;
 }
 .text-a{
     font-size: 1.2rem;
     padding-bottom: 10px;
 }
+.text-a ul {
+    margin-left: 20px; /* Memberi jarak ke kiri */
+    padding-left: 0; /* Menghapus padding default */
+    list-style-type: disc; /* Gunakan bullet point */
+}
 
+.text-a li {
+    color: black; /* Warna teks list */
+    margin-left: 20px; /* Memberi jarak ke kiri setiap item */
+    margin-bottom: 5px;
+    background-color: #D9D9D9; /* Memberi jarak antar item (gap 5px) */
+}
+
+.text-a li::marker {
+    color: black; /* Warna bullet point menjadi hitam */
+}
 .kotak {
     position: absolute;
     left: 0;
@@ -165,9 +180,9 @@ body{
 }
 
 /*----------------------- RESPONSIVE ---------------------*/
-@media (min-width: 350px) and (max-width: 500px){
+@media (min-width: 300px) and (max-width: 500px){
     .faq-start{
-        height: 40vh;
+        height: 30vh;
     }
     .faq-title {
         height: 25vh;
@@ -186,11 +201,16 @@ body{
         padding: 10px 0;
     }
     .text-q{
-        font-size: .8rem;
+        font-size: .6rem;
+        line-height: 1.2;
     }
     .text-a{
         font-size: .7rem;
         padding-bottom: 10px;
+        line-height: 2;
+    }
+    .text-a li{
+        line-height: 1.6;
     }
     .arrow{
         border-top: 8px solid transparent;
@@ -200,7 +220,7 @@ body{
 }
 @media (min-width: 500px) and (max-width: 700px){
     .faq-start{
-        height: 60vh;
+        height: 40vh;
     }
     .faq-title {
         height: 25vh;
@@ -233,7 +253,7 @@ body{
 }
 @media (min-width: 700px) and (max-width: 1000px){
     .faq-start{
-        height: 85vh;
+        height: 55vh;
     }
     .faq-title {
         height: 25vh;

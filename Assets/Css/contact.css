@@ -70,7 +70,7 @@ body{
 }
 .from-contact{
     width: 100%;
-    height: 60vh;
+    height: 37vh;
     display: flex;
     flex-direction: row;
     margin-top: 40px;
@@ -187,7 +187,7 @@ textarea {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
-    margin-top: 2rem;
+    margin-top: 0;
 }
 .whatsapp{
     padding: 0 2.25rem;
@@ -202,6 +202,7 @@ textarea {
     flex-direction: column;
     align-items: start;
     justify-content: center;
+    height: 200px;
 }
 .whatsapp h1{
     font-size: 2rem;
@@ -227,13 +228,16 @@ textarea {
 #wa-3{
     background-color: #5D99C1;
 }
+.map{
+    padding: 1rem 4rem;
+}
 iframe{
     margin-top: 30px;
     width: 100%;
     height: 300px;
     border-radius: 30px;
 }
-@media (min-width: 350px) and (max-width: 409px){
+@media (min-width: 300px) and (max-width: 409px){
     .contact-title{
         height: 200px;
     }
@@ -268,7 +272,7 @@ iframe{
     }
     .from-contact{
         margin-top: 0;
-        height: 30vh;
+        height: 35vh;
     }
     .from-contact-right{
         display: none;
@@ -299,11 +303,12 @@ iframe{
         padding: 5px 20px;
     }
     .information{
-        padding: 1rem;
+        padding: 1rem 4rem;
         padding-top: 0;
     }
     .whatsapp{
         align-items: center;
+        height: 120px;
     }
     .whatapptext p{
         font-size: 1rem;
@@ -387,11 +392,12 @@ iframe{
         padding: 5px 20px;
     }
     .information{
-        padding: 1rem;
+        padding: 1rem 4rem;
         padding-top: 0;
     }
     .whatsapp{
         align-items: center;
+        height: 120px;
     }
     .whatapptext p{
         font-size: 1rem;
@@ -475,7 +481,7 @@ iframe{
         padding: 5px 20px;
     }
     .information{
-        padding: 1rem;
+        padding: 1rem 4rem;
         padding-top: 0;
     }
     .informasi-chat{
@@ -484,6 +490,7 @@ iframe{
     }
     .whatsapp{
         align-items: center;
+        height: 120px;
     }
     .whatapptext p{
         font-size: 1rem;
@@ -536,7 +543,7 @@ iframe{
     }
     .from-contact{
         margin-top: 20px;
-        height: 50vh;
+        height: 30vh;
     }
     .from-contact-right{
         width: 50%;
@@ -577,7 +584,7 @@ iframe{
         padding: 5px 20px;
     }
     .information{
-        padding: 1rem;
+        padding: 1rem 4rem;
         padding-top: 0;
     }
     .informasi-chat{
@@ -586,6 +593,7 @@ iframe{
     }
     .whatsapp{
         align-items: center;
+        height: 120px;
     }
     .whatapptext p{
         font-size: 1rem;
@@ -638,7 +646,7 @@ iframe{
     }
     .from-contact{
         margin-top: 20px;
-        height: 50vh;
+        height: 25vh;
     }
     .from-contact-right{
         width: 50%;
@@ -679,7 +687,7 @@ iframe{
         padding: 5px 20px;
     }
     .information{
-        padding: 1rem;
+        padding: 1rem 8rem;
         padding-top: 0;
     }
     .informasi-chat{
@@ -688,15 +696,16 @@ iframe{
     }
     .whatsapp{
         align-items: center;
+        height: 170px;
     }
     .whatapptext p{
-        font-size: 1rem;
+        font-size: 2rem;
     }
     .whatapptext i {
-        font-size: 1.5rem;
+        font-size: 1.9rem;
     }
     .whatsapp h1{
-        font-size: 1.5rem;
+        font-size: 1.9rem;
     }
     iframe{
         height: 200px;
@@ -740,7 +749,7 @@ iframe{
     }
     .from-contact{
         margin-top: 20px;
-        height: 40vh;
+        height: 22vh;
         padding-left: 20px;
     }
     .from-contact-right{
@@ -792,7 +801,7 @@ iframe{
 
     }
     .information{
-        padding: 1rem;
+        padding: 1rem 8rem;
         padding-top: 0;
     }
     .informasi-chat{
@@ -801,15 +810,16 @@ iframe{
     }
     .whatsapp{
         align-items: center;
+        height: 170px;
     }
     .whatapptext p{
-        font-size: 1rem;
+        font-size: 2rem;
     }
     .whatapptext i {
-        font-size: 1.5rem;
+        font-size: 1.9rem;
     }
     .whatsapp h1{
-        font-size: 1.5rem;
+        font-size: 1.9rem;
     }
     iframe{
         height: 200px;
@@ -853,11 +863,11 @@ iframe{
     }
     .from-contact{
         margin-top: 20px;
-        height: 50vh;
+        height: 30vh;
         padding-left: 20px;
     }
     .from-contact-right{
-        width: 50%;
+        width: 40%;
     }
     .from-contact-right-content{
         width: 60%;
@@ -865,13 +875,17 @@ iframe{
         margin-top: 0;
         margin-bottom: 0;
         margin-right: 150px;
-        height: 90%;
+        height: 80%;
+        gap: 5px;
     }
     .from-contact-right-content h1{
         font-size: 1.3rem;
     }
     .from-contact-right-content h2{
         font-size: .9rem;
+    }
+    .from-contact-right-content input {
+        margin-top: 10px;
     }
     .from-contact-left {
         width: 100%;
@@ -905,15 +919,19 @@ iframe{
 
     }
     .information{
-        padding: 1rem;
+        padding: 1rem 2rem;
         padding-top: 0;
     }
     .informasi-chat{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
     }
     .whatsapp{
         align-items: center;
+        height: 150px;
+        width: 25%;
     }
     .whatapptext p{
         font-size: 1rem;
