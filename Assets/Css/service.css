@@ -1,3 +1,35 @@
+@keyframes SlideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes SlideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes Popup {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 
 .hero-container{
     background: url('../Image/background_layanan.png') no-repeat center center/cover;
@@ -10,15 +42,18 @@
     color: #fff;
     text-align: center;
     gap: 30px;
+    animation: Popup 1s ease 0s 1 normal forwards;
 }
 .hero-container h1{
     font-size: 2.25rem;
     width: 40%;
+    animation: SlideInLeft 1s ease 0s 1 normal forwards;
 }
 .hero-container p{
     font-size: 1rem;
     width: 506px;
     height: 180px;
+    animation: SlideInLeft 1s ease 0s 1 normal forwards;
 }
 .service-stats{
     display: flex;
@@ -30,6 +65,7 @@
     background-color: #002842;
     border-radius: 15px;
     padding: 32px 26px;
+    animation: Popup 2s ease 0s 1 normal forwards;
 }
 .service-stats-content{
     width: 100%;
@@ -48,7 +84,6 @@
     display: flex;
     flex-direction: row;
     gap: 10px;
-    
 }
 .service-stats-item-icon{
     width: 56px;
@@ -87,6 +122,7 @@
     display: flex;
     flex-direction: column;
 }
+
 .service-container-left-header{
     width: 333px;
     height: 63px;
@@ -99,6 +135,7 @@
     color: #fff;
     border-radius: 50px;
     margin-bottom: 70px;
+    animation: SlideInLeft 1s ease 0s 1 normal forwards;
 }
 .service-container-left-header .icon{
     padding: 8px 6px;
@@ -121,6 +158,7 @@
     width: 480px;
     gap: 20px;
     color: #00537A;
+    animation: SlideInLeft 2s ease 0s 1 normal forwards;
 }
 .service-container-left-text strong{
     font-weight: 900;
@@ -162,12 +200,14 @@
     border-radius: 25px;
     border: none;
     color: #fff;
+    animation: SlideInLeft 2.5s ease 0s 1 normal forwards;
 }
 .service-container-right{
     width: max-content;
     height: max-content;
     display: flex;
     flex-direction: row;
+    animation: SlideInRight 2.5s ease 0s 1 normal forwards;
 }
 .service-container-right .top-border{
     border: 15px solid #00537A;
@@ -280,11 +320,11 @@
         font-size: .193rem;
     }
     .service-container{
-        height: 400px;
+        height: 500px;
         width: 100%;
         justify-content:center;
-        align-items: center;
-        padding: 0px 20px;
+        align-items: start;
+        padding: 50px 10px 0px;
         gap: 0;
     }
     .service-container-left{
@@ -301,7 +341,7 @@
         height: 43px;
         padding: 5px;
         gap: 10px;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
     .service-container-left-header .icon{
         display: flex;
@@ -321,7 +361,7 @@
     }
     .service-container-left-text{
         width: 300px;
-        gap: 10px;
+        gap: 20px;
     }
     .service-container-left-text strong{
         font-weight: 900;
@@ -345,7 +385,7 @@
     }
     .service-container-left button{
         font-size: .813rem;
-        margin-top: 9px;
+        margin-top: 19px;
         width: 150px;
         height: 40px;
         padding: 3px 6px;
@@ -358,7 +398,7 @@
 @media (min-width: 600px) and (max-width: 1030px){
     .hero-container{
         padding: 120px 30px;
-        height: 450px;
+        height: 570px;
         gap: 5px;
     }
     .hero-container h1{
