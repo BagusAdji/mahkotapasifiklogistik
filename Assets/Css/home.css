@@ -477,12 +477,12 @@
 
 @media (min-width: 600px) and (max-width: 1030px) {
     .hero {
-        height: 350px;
+        height: 450px;
     }
 
     .nav-hero {
         margin-right: 30px;
-        margin-top: -200px;
+        margin-top: -270px;
         padding: 3px 3px 3px 0;
         border-right: 2px solid #ffffff50;
         gap: 15px;
@@ -520,7 +520,7 @@
     }
 
     #hero1 .hero-text {
-        margin-top: 100px;
+        margin-top: 150px;
         margin-left: 50px;
     }
 
@@ -550,7 +550,7 @@
     }
 
     #hero2 .hero-text {
-        margin-top: 80px;
+        margin-top: 130px;
         margin-bottom: 8px;
     }
 
@@ -585,7 +585,7 @@
     }
 
     #hero3 .hero-text {
-        margin-top: 100px;
+        margin-top: 150px;
         margin-bottom: 20px;
     }
 

@@ -181,7 +181,7 @@ nav{
         background: transparent;
         border: 1px solid white;
         color: white;
-        padding: 1px;
+        padding: 3px 1px;
         font-size: .3rem;
         cursor: pointer;
         transition: all 0.3s ease;
@@ -194,7 +194,7 @@ nav{
         background: transparent;
         border: 1px solid white;
         color: white;
-        padding: 1px;
+        padding: 3px 1px;
         font-size: .3rem;
         cursor: pointer;
         transition: all 0.3s ease;
@@ -236,6 +236,10 @@ nav{
         position: relative;
         transition: margin .4s; 
         font-size: .5rem;;
+    }
+    .nav-link span::after{
+        bottom: -9px;
+        height: 2px;
     }
 }
 @media (min-width: 600px) and (max-width: 1030px)     {
@@ -243,60 +247,46 @@ nav{
         padding: 0px 10px;
     }
     nav{
-        padding: 10px 10px 5px 10px;
+        padding: 10px ;
         border-bottom: 2px solid #ffffff10;
     }
     .nav-logo img{
-        width: 42px;
-        height: 31px;
+        width: 62px;
+        height: 51px;
     }
     .btn-delivery{
-        width: 73px;
+        width: 143px;
         display: flex;
         align-items: center;
         gap: 8px; /* Jarak antara ikon dan teks */
         background: transparent;
-        border: 1px solid white;
+        border: 3px solid white;
         color: white;
-        padding: 1px;
-        font-size: .3rem;
+        padding: 8px 2px;
+        font-size: .6rem;
         cursor: pointer;
         transition: all 0.3s ease;
     }
     .btn-message{
-        width: 53px;
+        width: 103px;
         display: flex;
         align-items: center;
         gap: 2px; /* Jarak antara ikon dan teks */
         background: transparent;
-        border: 1px solid white;
+        border: 3px solid white;
         color: white;
-        padding: 1px;
-        font-size: .3rem;
+        padding: 8px 2px;
+        font-size: .6rem;
         cursor: pointer;
         transition: all 0.3s ease;
     }
     .btn-message img{
-        width: 7px; /* Sesuaikan ukuran ikon */
-        height: 7px;
+        width: 12px; /* Sesuaikan ukuran ikon */
+        height: 12px;
     }
     .btn-delivery img{
-        width: 12px; /* Sesuaikan ukuran ikon */
-        height: 6px;
-    }
-    .btn-translate{
-        width: 12px;
+        width: 24px; /* Sesuaikan ukuran ikon */
         height: 12px;
-        background: transparent;
-        border: none;
-        color: white;
-        padding: 2px;
-        font-size: .4rem;
-        cursor: pointer;
-        transition: all 0.3s ease;
-    }
-    .btn-translate.active{
-        border: 1px solid white;
     }
     .nav-list ul{
         gap: 10px;
@@ -312,7 +302,18 @@ nav{
     .nav-link span{
         position: relative;
         transition: margin .4s; 
-        font-size: .5rem;;
+        font-size: 1rem;;
+    }
+    .nav-link span::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -12px;
+        width: 0%;
+        height: 3px;
+        opacity: 0;
+        background-color: white;
+        transition: width .4s ease-out;
     }
 }
 footer {
