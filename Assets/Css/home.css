@@ -716,7 +716,7 @@
 
 .reason-right-text {
     opacity: 0;
-    transform: translateX(100%);
+    transform: translateX(30%);
     transition: all 0.8s ease;
 }
 
@@ -737,7 +737,7 @@
     text-align: center;
     gap: 60px;
     opacity: 0;
-    transform: translateX(100%);
+    transform: translateX(30%);
     transition: all 1s ease;
 }
 
@@ -1364,6 +1364,8 @@
 
 .service-card img {
     margin-bottom: 20px;
+    height: 40px;
+    width: 40px;
 }
 
 .service-card h3 {

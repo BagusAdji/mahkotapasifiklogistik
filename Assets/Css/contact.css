@@ -152,7 +152,7 @@ textarea {
 .from-contact-right-content h1{
     margin: 0;
     padding-top: 10px;
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     color: white;
 }
 .from-contact-right-content h2{
@@ -160,6 +160,10 @@ textarea {
     padding-left: 0px ;
     color: white;
     margin-bottom: 10;
+}
+.sumbitemail{
+    display: flex;
+    flex-direction: column;
 }
 .from-contact-right-content input{
     border-radius: 30px;
@@ -199,14 +203,14 @@ textarea {
     font-weight: bold;
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     justify-content: center;
     height: 200px;
 }
 .whatsapp h1{
-    font-size: 2rem;
+    font-size: 1rem;
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 .whatapptext{
     display: flex;
@@ -316,7 +320,7 @@ iframe{
         font-size: 1.5rem;
     }
     .whatsapp h1{
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     iframe{
         height: 200px;
@@ -391,7 +395,7 @@ iframe{
         padding: 5px 20px;
     }
     .information{
-        padding: 1rem 4rem;
+        padding: 2rem 4rem;
         padding-top: 0;
     }
     .whatsapp{
@@ -939,7 +943,7 @@ iframe{
         font-size: 1.5rem;
     }
     .whatsapp h1{
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     iframe{
         height: 200px;
