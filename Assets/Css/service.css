@@ -207,7 +207,7 @@
     height: max-content;
     display: flex;
     flex-direction: row;
-    animation: SlideInRight 2.5s ease 0s 1 normal forwards;
+    animation: Popup 2.5s ease 0s 1 normal forwards;
 }
 .service-container-right .top-border{
     border: 15px solid #00537A;
